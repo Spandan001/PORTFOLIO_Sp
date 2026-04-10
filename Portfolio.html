@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spandan Manna | RED Shield TEAM — Cybersecurity Portfolio</title>
+    <meta name="description" content="Spandan Manna - B.Tech CSE Student specializing in Cybersecurity, Penetration Testing and Web Application Security. RED Shield TEAM.">
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ===== PHASE 1: HAKAI WORD LOADER ===== -->
+    <div id="loader-overlay">
+        <div id="loader-word"></div>
+    </div>
+
+    <!-- ===== PHASE 2: LOGO ZOOM REVEAL ===== -->
+    <div id="logo-zoom-overlay">
+        <div id="logo-zoom-inner">
+            <div id="logo-zoom-img-wrap">
+                <img src="arishem_logo.png" alt="Arishem" id="logo-zoom-img">
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#home" class="nav-logo">
+                <img src="arishem_nav_logo.png" alt="Arishem Logo">
+                <span>Spandan Manna</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link scramble-nav" data-text="HOME">HOME</a></li>
+                <li><a href="#about" class="nav-link scramble-nav" data-text="ABOUT">ABOUT</a></li>
+                <li><a href="#portfolio" class="nav-link scramble-nav" data-text="PORTFOLIO">PORTFOLIO</a></li>
+                <li><a href="#services" class="nav-link scramble-nav" data-text="SERVICES">SERVICES</a></li>
+                <li><a href="#threat-intel" class="nav-link scramble-nav" data-text="THREAT MAP">THREAT MAP</a></li>
+                <li><a href="#contact" class="nav-link scramble-nav" data-text="CONTACT">CONTACT</a></li>
+            </ul>
+            <a href="#contact" class="nav-cta scramble-btn" data-text="HIRE ME">HIRE ME</a>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== MOBILE NAV ===== -->
+    <div class="mobile-nav" id="mobileNav">
+        <ul>
+            <li><a href="#home" class="mobile-link">HOME</a></li>
+            <li><a href="#about" class="mobile-link">ABOUT</a></li>
+            <li><a href="#portfolio" class="mobile-link">PORTFOLIO</a></li>
+            <li><a href="#services" class="mobile-link">SERVICES</a></li>
+            <li><a href="#threat-intel" class="mobile-link">THREAT MAP</a></li>
+            <li><a href="#contact" class="mobile-link">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home" class="hero">
+        <!-- Three.js WebGL background canvas -->
+        <canvas id="heroWebGLCanvas" class="hero-bg-canvas"></canvas>
+        <div class="hero-flashlight" id="heroFlashlight"></div>
+
+        <div class="hero-container">
+            <div class="hero-content">
+
+                <div class="hero-title">
+                    <span class="title-line">I'm</span>
+                    <span class="title-name hero-name-brevis glitch" data-text="Spandan Manna" id="heroName">Spandan Manna</span>
+                    <span class="title-role" id="heroRole"></span>
+                </div>
+
+                <p class="hero-desc" id="heroDesc">
+                    Securing the digital frontier. B.Tech CSE student specializing in penetration testing, VAPT, and cybersecurity — keeping systems ahead of modern threats.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary scramble-btn" data-text="HIRE ME NOW">HIRE ME NOW</a>
+                    <a href="#portfolio" class="btn btn-outline scramble-btn" data-text="VIEW WORK">VIEW WORK</a>
+                    <a href="#" class="btn btn-ghost scramble-btn" id="cvBtn" data-text="DOWNLOAD CV">DOWNLOAD CV</a>
+                </div>
+
+                <!-- Live stats bar -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-num" data-count="150">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">CTF Challenges</span>
+                    </div>
+                    <div class="stat-sep"></div>
+                    <div class="stat-item">
+                        <span class="stat-num" data-count="3">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Internships</span>
+                    </div>
+                    <div class="stat-sep"></div>
+                    <div class="stat-item">
+                        <span class="stat-num" data-count="10">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image-area">
+                <div class="image-glow-ring"></div>
+                <!-- Hakai-style vertical text decoration -->
+                <div class="hero-vertical-text" aria-hidden="true">
+                    <span class="vt-char vt-red">A</span>
+                    <span class="vt-char vt-outline">R</span>
+                    <span class="vt-char vt-red">I</span>
+                    <span class="vt-char vt-outline">S</span>
+                    <span class="vt-char vt-red">H</span>
+                    <span class="vt-char vt-outline">E</span>
+                    <span class="vt-char vt-red">M</span>
+                </div>
+                <img src="spandan_new.png" alt="Spandan Manna" class="img-person">
+                <!-- Floating security badges -->
+                <div class="float-badge badge-1">
+                    <i class="fas fa-shield-halved"></i>
+                    <span>Penetration Testing</span>
+                </div>
+                <div class="float-badge badge-2">
+                    <i class="fas fa-lock"></i>
+                    <span>VAPT</span>
+                </div>
+                <div class="float-badge badge-3">
+                    <i class="fas fa-bug"></i>
+                    <span>Bug Hunter</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <a href="#about" class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>SCROLL DOWN</span>
+        </a>
+    </section>
+
+    <!-- ══ GEO DIVIDER: Hero → About ══ -->
+    <div class="geo-divider geo-div-hero-about"></div>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="section about-section">
+        <!-- Interactive Red String WebGL Background -->
+        <canvas id="aboutStringCanvas" class="about-bg-canvas"></canvas>
+
+        <div class="section-inner">
+            <div class="section-heading gsap-reveal">
+                <span class="section-tag">WHO I AM</span>
+                <h2>About <span class="red">Me</span></h2>
+                <div class="heading-line"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text gsap-reveal">
+                    <p>Motivated and detail-oriented <strong>B.Tech Computer Science &amp; Engineering</strong> student with hands-on experience in cybersecurity, penetration testing, and web application vulnerability assessment.</p>
+                    <p>Currently employed at <strong>Prime Infoserv</strong> as a <strong>Jr. Cyber Security Analyst</strong>, working on real-world VAPT engagements and security assessments. Completed a <strong>Java certification program</strong> and solved <strong>150+ CTF challenges</strong> across platforms like TryHackMe and HackTheBox.</p>
+                    <p>Strong foundation in networking, deep learning, and secure application development. Passionate about finding vulnerabilities and strengthening system defenses before adversaries do.</p>
+                    <div class="about-actions">
+                        <a href="#contact" class="btn btn-primary scramble-btn" data-text="HIRE ME NOW">HIRE ME NOW</a>
+                        <a href="#" class="btn btn-outline scramble-btn" id="cvBtnAbout" data-text="DOWNLOAD CV">DOWNLOAD CV</a>
+                    </div>
+                </div>
+
+                <div class="about-skills gsap-reveal">
+                    <h3>Core Skills</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <div class="skill-info"><span>Penetration Testing</span><span>88%</span></div>
+                            <div class="skill-track"><div class="skill-fill" data-w="88"></div></div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info"><span>Web App Security (VAPT)</span><span>85%</span></div>
+                            <div class="skill-track"><div class="skill-fill" data-w="85"></div></div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info"><span>Networking &amp; Protocols</span><span>80%</span></div>
+                            <div class="skill-track"><div class="skill-fill" data-w="80"></div></div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info"><span>Java / Python</span><span>75%</span></div>
+                            <div class="skill-track"><div class="skill-fill" data-w="75"></div></div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info"><span>CTF Challenges</span><span>82%</span></div>
+                            <div class="skill-track"><div class="skill-fill" data-w="82"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ GEO DIVIDER: About → Zoom ══ -->
+    <div class="geo-divider geo-div-about-zoom"></div>
+
+    <!-- ===== ZOOM TRANSITION: RED SHIELD TEAM ===== -->
+    <section id="zoom-transition" class="zoom-section">
+        <div class="zoom-wrapper">
+            <div class="zoom-brand-group" id="zoomBrandGroup">
+                <img src="arishem_logo.png" alt="Red Shield" class="zoom-logo" id="zoomLogo">
+                <span class="zoom-brand-text" id="zoomBrandText">RED TEAM</span>
+            </div>
+        </div>
+        <!-- Red flood overlay for the zoom-in effect -->
+        <div class="zoom-red-flood" id="zoomRedFlood"></div>
+    </section>
+
+    <!-- ══ GEO DIVIDER: Zoom → Portfolio ══ -->
+    <div class="geo-divider geo-div-zoom-portfolio"></div>
+
+    <!-- ===== PORTFOLIO SECTION ===== -->
+    <section id="portfolio" class="section portfolio-section">
+        <div class="section-inner">
+            <div class="section-heading gsap-reveal">
+                <span class="section-tag">MY WORK</span>
+                <h2>Portfolio <span class="red">Projects</span></h2>
+                <div class="heading-line"></div>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-card gsap-reveal-card" data-category="security">
+                    <div class="card-icon"><i class="fas fa-shield-virus"></i></div>
+                    <h3>Web App VAPT</h3>
+                    <p>Comprehensive vulnerability assessment and penetration testing of web applications, identifying XSS, SQLi, CSRF, and IDOR vulnerabilities.</p>
+                    <div class="card-tags">
+                        <span>Burp Suite</span><span>OWASP</span><span>SQLMap</span>
+                    </div>
+                    <a href="#contact" class="card-link scramble-btn" data-text="VIEW DETAILS →">VIEW DETAILS →</a>
+                </div>
+
+                <div class="portfolio-card gsap-reveal-card" data-category="ctf">
+                    <div class="card-icon"><i class="fas fa-flag"></i></div>
+                    <h3>CTF Competitions</h3>
+                    <p>Solved 15+ Capture-The-Flag challenges across cryptography, forensics, and web exploitation categories on platforms like HackTheBox.</p>
+                    <div class="card-tags">
+                        <span>HackTheBox</span><span>TryHackMe</span><span>Crypto</span>
+                    </div>
+                    <a href="#contact" class="card-link scramble-btn" data-text="VIEW DETAILS →">VIEW DETAILS →</a>
+                </div>
+
+                <div class="portfolio-card gsap-reveal-card" data-category="dev">
+                    <div class="card-icon"><i class="fas fa-code"></i></div>
+                    <h3>Secure Web Apps</h3>
+                    <p>Built secure web applications with authentication, authorization, input validation, and proper session management using Java and Python.</p>
+                    <div class="card-tags">
+                        <span>Java</span><span>Python</span><span>HTML/CSS</span>
+                    </div>
+                    <a href="#contact" class="card-link scramble-btn" data-text="VIEW DETAILS →">VIEW DETAILS →</a>
+                </div>
+
+                <div class="portfolio-card gsap-reveal-card" data-category="security">
+                    <div class="card-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>Network Security Audit</h3>
+                    <p>Performed network enumeration, scanning, and vulnerability identification for internal networks using tools like Nmap, Nessus, and Wireshark.</p>
+                    <div class="card-tags">
+                        <span>Nmap</span><span>Wireshark</span><span>Nessus</span>
+                    </div>
+                    <a href="#contact" class="card-link scramble-btn" data-text="VIEW DETAILS →">VIEW DETAILS →</a>
+                </div>
+
+                <div class="portfolio-card gsap-reveal-card" data-category="dev">
+                    <div class="card-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Deep Learning Project</h3>
+                    <p>Applied deep learning techniques to build models for pattern recognition and anomaly detection, leveraging neural network architectures.</p>
+                    <div class="card-tags">
+                        <span>Python</span><span>TensorFlow</span><span>ML</span>
+                    </div>
+                    <a href="#contact" class="card-link scramble-btn" data-text="VIEW DETAILS →">VIEW DETAILS →</a>
+                </div>
+
+                <div class="portfolio-card gsap-reveal-card" data-category="security">
+                    <div class="card-icon"><i class="fas fa-key"></i></div>
+                    <h3>Password Security Analysis</h3>
+                    <p>Researched and implemented password cracking simulations to understand attack vectors and strengthen organizational password policies.</p>
+                    <div class="card-tags">
+                        <span>Hashcat</span><span>John</span><span>Python</span>
+                    </div>
+                    <a href="#contact" class="card-link scramble-btn" data-text="VIEW DETAILS →">VIEW DETAILS →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ GEO DIVIDER: Portfolio → Services ══ -->
+    <div class="geo-divider geo-div-portfolio-services"></div>
+
+    <!-- ===== SERVICES SECTION ===== -->
+    <section id="services" class="section services-section">
+        <div class="section-inner">
+            <div class="section-heading gsap-reveal">
+                <span class="section-tag">WHAT I DO</span>
+                <h2>My <span class="red">Services</span></h2>
+                <div class="heading-line"></div>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card gsap-reveal-card">
+                    <div class="service-number">01</div>
+                    <div class="service-icon"><i class="fas fa-magnifying-glass-chart"></i></div>
+                    <h3>Penetration Testing</h3>
+                    <p>Simulated cyberattacks on your systems to identify vulnerabilities before real attackers do. Includes network, web app, and API pentesting.</p>
+                    <a href="#contact" class="service-link scramble-btn" data-text="GET A QUOTE →">GET A QUOTE →</a>
+                </div>
+
+                <div class="service-card gsap-reveal-card">
+                    <div class="service-number">02</div>
+                    <div class="service-icon"><i class="fas fa-bug-slash"></i></div>
+                    <h3>Vulnerability Assessment</h3>
+                    <p>Comprehensive VAPT reports with prioritized findings, CVSS scoring, and actionable remediation steps to harden your security posture.</p>
+                    <a href="#contact" class="service-link scramble-btn" data-text="GET A QUOTE →">GET A QUOTE →</a>
+                </div>
+
+                <div class="service-card gsap-reveal-card">
+                    <div class="service-number">03</div>
+                    <div class="service-icon"><i class="fas fa-globe-asia"></i></div>
+                    <h3>Web App Security</h3>
+                    <p>Full OWASP Top 10 testing covering SQL injection, XSS, authentication bypass, IDOR, SSRF, and business logic vulnerabilities.</p>
+                    <a href="#contact" class="service-link scramble-btn" data-text="GET A QUOTE →">GET A QUOTE →</a>
+                </div>
+
+                <div class="service-card gsap-reveal-card">
+                    <div class="service-number">04</div>
+                    <div class="service-icon"><i class="fas fa-user-secret"></i></div>
+                    <h3>Security Consulting</h3>
+                    <p>Advisory services for building secure development pipelines, security awareness training, and implementing best-practice security frameworks.</p>
+                    <a href="#contact" class="service-link scramble-btn" data-text="GET A QUOTE →">GET A QUOTE →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ GEO DIVIDER: Services → Threat ══ -->
+    <div class="geo-divider geo-div-services-threat"></div>
+
+    <!-- ===== THREAT INTELLIGENCE DASHBOARD ===== -->
+    <section id="threat-intel" class="section threat-section">
+        <div class="section-inner">
+            <div class="section-heading gsap-reveal">
+                <span class="section-tag">LIVE INTELLIGENCE</span>
+                <h2>Threat <span class="red">Dashboard</span></h2>
+                <div class="heading-line"></div>
+            </div>
+
+            <div class="threat-layout">
+                <!-- 3D Globe Container -->
+                <div class="globe-container gsap-reveal" id="globeContainer">
+                    <div id="globeViz"></div>
+                    <!-- Overlay Stats -->
+                    <div class="globe-overlay-stats">
+                        <div class="globe-stat">
+                            <span class="globe-stat-label">SYSTEMS COMPROMISED TODAY</span>
+                            <span class="globe-stat-num" id="compromisedCount">0</span>
+                        </div>
+                        <div class="globe-stat">
+                            <span class="globe-stat-label">ACTIVE THREATS</span>
+                            <span class="globe-stat-num" id="activeThreats">0</span>
+                        </div>
+                        <div class="globe-stat">
+                            <span class="globe-stat-label">ATTACKS BLOCKED</span>
+                            <span class="globe-stat-num" id="attacksBlocked">0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Threat Info Cards -->
+                <div class="threat-cards">
+                    <div class="threat-card gsap-reveal-card">
+                        <div class="threat-card-header">
+                            <i class="fas fa-crosshairs"></i>
+                            <h4>Top Attack Vectors</h4>
+                        </div>
+                        <ul class="threat-list" id="attackVectors">
+                            <li><span class="threat-name">SQL Injection</span><span class="threat-bar"><span style="width:92%"></span></span><span class="threat-pct">92%</span></li>
+                            <li><span class="threat-name">Phishing</span><span class="threat-bar"><span style="width:87%"></span></span><span class="threat-pct">87%</span></li>
+                            <li><span class="threat-name">Ransomware</span><span class="threat-bar"><span style="width:78%"></span></span><span class="threat-pct">78%</span></li>
+                            <li><span class="threat-name">XSS Attacks</span><span class="threat-bar"><span style="width:71%"></span></span><span class="threat-pct">71%</span></li>
+                            <li><span class="threat-name">DDoS</span><span class="threat-bar"><span style="width:65%"></span></span><span class="threat-pct">65%</span></li>
+                        </ul>
+                    </div>
+                    <div class="threat-card gsap-reveal-card">
+                        <div class="threat-card-header">
+                            <i class="fas fa-earth-americas"></i>
+                            <h4>Most Targeted Regions</h4>
+                        </div>
+                        <ul class="threat-list" id="targetedRegions">
+                            <li><span class="threat-name">🇺🇸 United States</span><span class="threat-bar"><span style="width:95%"></span></span><span class="threat-pct">95%</span></li>
+                            <li><span class="threat-name">🇮🇳 India</span><span class="threat-bar"><span style="width:82%"></span></span><span class="threat-pct">82%</span></li>
+                            <li><span class="threat-name">🇩🇪 Germany</span><span class="threat-bar"><span style="width:74%"></span></span><span class="threat-pct">74%</span></li>
+                            <li><span class="threat-name">🇬🇧 United Kingdom</span><span class="threat-bar"><span style="width:68%"></span></span><span class="threat-pct">68%</span></li>
+                            <li><span class="threat-name">🇧🇷 Brazil</span><span class="threat-bar"><span style="width:59%"></span></span><span class="threat-pct">59%</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ GEO DIVIDER: Threat → News ══ -->
+    <div class="geo-divider geo-div-threat-news"></div>
+
+    <!-- ===== LIVE CYBER NEWS TICKER ===== -->
+    <section id="cyber-news" class="section news-section">
+        <div class="section-inner">
+            <div class="section-heading gsap-reveal">
+                <span class="section-tag">STAY INFORMED</span>
+                <h2>Cyber <span class="red">News</span></h2>
+                <div class="heading-line"></div>
+            </div>
+
+            <!-- Scrolling Ticker -->
+            <div class="news-ticker-wrap gsap-reveal">
+                <div class="news-ticker" id="newsTicker">
+                    <div class="ticker-track">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Cards Grid -->
+            <div class="news-grid" id="newsGrid">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ GEO DIVIDER: News → Contact ══ -->
+    <div class="geo-divider geo-div-news-contact"></div>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="section contact-section">
+        <div class="section-inner">
+            <div class="section-heading gsap-reveal">
+                <span class="section-tag">GET IN TOUCH</span>
+                <h2>Hire <span class="red">Me</span></h2>
+                <div class="heading-line"></div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info gsap-reveal-left">
+                    <h3>Let's Work Together</h3>
+                    <p>Looking for a passionate Cybersecurity professional? I'm available for freelance engagements, internships, and full-time roles.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:spandanmanna4@gmail.com">spandanmanna4@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+919832392914">+91-9832392914</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/spandan-manna-a7590a1ab/" target="_blank">linkedin.com/in/spandan-manna</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/Spandan001" target="_blank">github.com/Spandan001</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-flag"></i>
+                            <a href="https://tryhackme.com/p/Arishem001" target="_blank">tryhackme.com/p/Arishem001</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form gsap-reveal-right" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fname">Full Name *</label>
+                            <input type="text" id="fname" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="femail">Email Address *</label>
+                            <input type="email" id="femail" name="email" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="fsubject">Subject *</label>
+                        <input type="text" id="fsubject" name="subject" placeholder="Penetration Testing Inquiry" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fmessage">Message *</label>
+                        <textarea id="fmessage" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full scramble-btn" data-text="SEND MESSAGE">SEND MESSAGE</button>
+                    <div class="form-status" id="formStatus"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-logo">
+                <img src="arishem_nav_logo.png" alt="Arishem Logo">
+                <span>Spandan Manna</span>
+            </div>
+            <p class="footer-copy">© 2024 Spandan Manna. All Rights Reserved.</p>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/spandan-manna-a7590a1ab/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Spandan001" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://tryhackme.com/p/Arishem001" target="_blank" aria-label="TryHackMe"><i class="fas fa-flag"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== EXTERNAL LIBRARIES (CDN) ===== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://unpkg.com/globe.gl@2.27.2/dist/globe.gl.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
