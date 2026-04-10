@@ -1390,7 +1390,7 @@ function animateCounters() {
     if (!btn) return;
     btn.addEventListener("click", (e) => {
       e.preventDefault();
-      alert("CV download will be available soon!\nContact me at your email.");
+      window.open("https://drive.google.com/file/d/1WVerwmb80mdB_o5be0l40PmgWVh_tcMC/view?usp=drive_link", "_blank");
     });
   });
 })();
